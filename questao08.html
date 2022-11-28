@@ -15,11 +15,58 @@
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 08</h1>
-        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7 para que todos os seus campos fiquem com títulos flutuantes.</p>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7
+            para que todos os seus campos fiquem com títulos flutuantes.</p>
         <hr>
     </div>
     <!-- FAZER AQUI -->
     <div class="container">
+        <form>
+            <div class="row col-10  mx-auto">
+                <div class="col-10 mb-3">
+                    <h2 class="display-6">Cadastro de Cliente</h2>
+                    <hr>
+                </div>
+                <div class=" col-lg-10  mb-3 form-floating">
+
+                    <input type="text" name="txtName" class="form-control" id="nome" placeholder="">
+                    <label for="nome" class="form-label mx-2 text-muted">Nome Completo</label>
+                </div>
+                <div class="col-lg-3  mb-3 form-floating   ">
+                   
+                    <input type="text" class="form-control" id="cpf" placeholder=" ">
+                    <label for="cpf" class="form-label mx-2 text-muted">Cpf</label>
+                </div>
+                <div class="col-lg-3 mb-3 form-floating">
+                    <input type="date" class="form-control " id="date" placeholder="">
+                    <label for="date" class="form-label mx-2 ">Data de Nascimento</label>
+                </div>
+                <div class=" col-lg-4 mb-3 form-floating">
+                   
+                    <select name="perfil" id="perfil" class="form-select" placeholder=" ">
+                        <option value="">Selecione um Gênero...</option>></option>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                        <option value="">Outro</option>
+                    </select>
+                    <label for="perfil" class="mx-2">Gênero</label>
+                    
+                               
+                    
+                    
+                    
+                </div>
+                <div class=" col-lg-10 mb-3 form-floating">
+                   
+                    <textarea class="form-control" id="endereco" rows="4" placeholder=""></textarea>
+                    <label for="endereco" class="form-label mx-2 text-muted">Endereço completo</label>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class=" btn bg-primary">
+                        Entrar
+                    </button>
+                </div>
+        </form>
 
     </div>
 </body>

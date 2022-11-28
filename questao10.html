@@ -15,7 +15,8 @@
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 10</h1>
-        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7 adiconando as seguintes situações de validação de campos:</p>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário da questão 7
+            adiconando as seguintes situações de validação de campos:</p>
         <ul class="lead">
             <li>O campo Nome Completo deve estar marcado como válido;</li>
             <li>O campo CPF deve estar marcado como inválido e com a mensagem de validação "Campo obrigatório";</li>
@@ -28,8 +29,75 @@
     </div>
     <!-- FAZER AQUI -->
     <div class="container">
+        <form method="post">
+            <div class="row col-lg-8 mx-auto g-3">
+                <div>
+                     <span class="display-6 mb-3">Cadastro de Cliente</span>
+                    <hr>
+                </div>
+                <div class=" col-lg-4  mb-3 mt-3 input-group">
+                    <label for="nome" class=" input-group-text bi-person "></label>
+                    <input type="text" name="txtName" class="form-control is-valid" id="nome"
+                        placeholder="João do Brasil">
+                    <div class="valid-feedback text-center">
+                       
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg  mb-3 input-group">
+                    <label for="cpf" class="input-group-text bi-person-vcard"></label>
+                    <input type="text" class="form-control is-invalid" id="cpf" placeholder="">
+                    <div class="invalid-feedback text-center">
+                        Campo Ogrigatório
+
+
+                    </div>
+                </div>
+                <div class="col-lg mb-3 input-group">
+                    <label for="data" class="input-group-text bi-calendar"></label>
+                    <input type="date" class="form-control is-valid " id="data" placeholder="" value="1999-01-01">
+                    <div class="valid-feedback " style="color: transparent ;">
+                        Data valida
+
+                    </div>
+                </div>
+                <div class=" col-lg mb-3 input-group">
+                    <label for="perfil" class="input-group-text bi-people"></label>
+                    <select name="perfil" id="perfil" class="form-select is-invalid">
+                        <option value="">Gênero...</option>
+                        <option value="">Masculino</option>
+                        <option value="">Feminino</option>
+                        <option value="">Outro</option>
+                    </select>
+                    <div class="invalid-feedback text-center">
+                        Campo Obrigatóro
+                    </div>
+                </div>
+                <div class="  col-lg-8 mb-3 input-group   ">
+                    <label for="endereco" class="input-group-text bi-house"></label>
+                    <textarea class="form-control form-control is-valid" id="endereco"
+                        placeholder="Rua felicidade, 10 Alto Padrão - São Paulo - Brasil"></textarea>
+
+
+
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class=" btn bg-primary ">
+                        Entrar
+                    </button>
+                </div>
+        </form>
+
+
+
 
     </div>
+
+
+
 </body>
 
 </html>
