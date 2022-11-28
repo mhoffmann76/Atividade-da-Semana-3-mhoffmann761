@@ -14,13 +14,77 @@
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 04</h1>
-        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da questão anterior, substituindo, onde possível, os campos tradicionais por campos com título flutuante.</p>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da
+            questão anterior, substituindo, onde possível, os campos tradicionais por campos com título flutuante.</p>
         <hr>
     </div>
     <!-- FAZER AQUI -->
-    <div class="container">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <h1 div class="display-6">Login</h1>
+                <div>
+                    <hr>
+                </div>
+
+                <form>
+
+                    <div class="form-floating mb-3 ">
+
+                        <input type="email" class="form-control  " id="usuario" placeholder=" ">
+                        <label for="usuario">Usuário(E-mail)</label>
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="senha" placeholder=" ">
+                        <label for="senha">Senha</label>
+                    </div>
+
+                    <div class="mb-3 form-floating">
+
+
+                        <select name="perfil" id="perfil" class="form-select" placeholder=" ">
+
+                            <option value="">Selecione um perfil...</option>></option>
+                            <option value="">Administrador</option>
+                            <option value="">Gerente</option>
+                            <option value="">Usuário</option>
+                        </select>
+                        <label for="perfil">Perfil</label>
+
+                    </div>
+
+
+                    <div class="mb-3 form-switch">
+                        <input type="checkbox" id="lembrar" class=" form-check-input">
+                        <label for="lembrar" class="form-check-label">
+                            Lembrar de mim
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class=" btn btn-primary">
+                            Entrar
+                        </button>
+                        <div class=" mt-3">
+                            <div><a class="text-decoration-none" href="#">Esqueci minha senha</a></div>
+                            <div><a class="text-decoration-none" href="#">Quero me
+                                    cadastrar</a></div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
 
     </div>
+
+
 </body>
 
 </html>

@@ -14,13 +14,61 @@
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 02</h1>
-        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da questão anterior adicionando um campo de seleção intitulado "Perfil" contendo 4 opções: "Selecione um perfil...", "Administrador", "Gerente" e "Usuário". Adicione também um campo de checagem intitulado "Lembrar de mim".</p>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da
+            questão anterior adicionando um campo de seleção intitulado "Perfil" contendo 4 opções: "Selecione um
+            perfil...", "Administrador", "Gerente" e "Usuário". Adicione também um campo de checagem intitulado "Lembrar
+            de mim".</p>
         <hr>
     </div>
     <!-- FAZER AQUI -->
     <div class="container">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <h1 div class="display-6">Login</h1>
+                <div>
+                    <hr>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuário(E-mail)</label>
+                        <input type="email" id="usuario" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" id="senha" class="form-control">
+                    </div>
 
-    </div>
+                    <div class="mb-3">
+                        <label for="perfil" class="form-label">Perfil</label>
+
+                        <select name="perfil" id="perfil"  class="form-select">
+                            <option value="">Selecione um perfil...</option>
+                            <option value="Administrador">Administrador</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Usuário">Usuário</option>
+                        </select>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="checkbox" id="lembrar" class="form-check-input" >
+                        <label for="lembrar" class="form-check-label">
+                            Lembrar
+
+                        </label>
+
+
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class=" btn bg-primary">
+                            Entrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
 </body>
 
 </html>

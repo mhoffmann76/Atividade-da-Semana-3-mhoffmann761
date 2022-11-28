@@ -15,11 +15,108 @@
     <div class="container my-3">
         <p><a href="index.html">Voltar ao Índice</a></p>
         <h1 class="display-2">Questão 07</h1>
-        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, crie um formulário tradicional para cadastrar um cliente de uma loja virtual. O formulário deve ter os seguintes campos: Nome Completo, CPF, Data de Nascimento, Gênero e Endereço Completo. O formulário deve ocupar toda a largura do contêiner em resolução inferior ao breakpoint LG, 8 colunas em LG e 6 colunas em XL ou superior. Quando não ocupar toda a largura do contêiner, o formulário deve estar centralizado na página. Ainda, na resolução MD ou superior, os campos CPF, Data de Nascimento e Gênero devem estar na mesma linha, e em resoluções abaixo do breakpoint LG, cada campo deve ocupar uma linha inteira.</p>
+        <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, crie um formulário tradicional para
+            cadastrar um cliente de uma loja virtual. O formulário deve ter os seguintes campos: Nome Completo, CPF,
+            Data de Nascimento, Gênero e Endereço Completo. O formulário deve ocupar toda a largura do contêiner em
+            resolução inferior ao breakpoint LG, 8 colunas em LG e 6 colunas em XL ou superior. Quando não ocupar toda a
+            largura do contêiner, o formulário deve estar centralizado na página. Ainda, na resolução MD ou superior, os
+            campos CPF, Data de Nascimento e Gênero devem estar na mesma linha, e em resoluções abaixo do breakpoint LG,
+            cada campo deve ocupar uma linha inteira.</p>
         <hr>
     </div>
     <!-- FAZER AQUI -->
     <div class="container">
+        <form>
+
+
+            <div class="row col-10  mx-auto ">
+                <div class=" col-lg-10  mb-3">
+                    <h2 class="text-center display-6">Login</h2>
+                    <hr>
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" name="txtName" class="form-control" id="nome" required>
+
+
+                </div>
+
+
+
+
+                <div class="col-lg-3  mb-3   "><label for="cpf" class="form-label">Cpf</label>
+                    <input type="text" class="form-control" id="cpf" required>
+                </div>
+                <div class="col-lg-3 mb-3    "><label for="date" class="form-label ">Nascimento</label>
+                    <input type="date" class="form-control  " id="date" required>
+                </div>
+                <div class=" col-lg-4 mb-3">
+                    <label for="perfil" class="form-label">Gênero</label>
+                    <select name="perfil" id="perfil" class="form-select">
+                        <option value="">Selecione um gênero...</option>
+                        <option value="Administrador">Masculino</option>
+                        <option value="Gerente">Feminino</option>
+                        <option value="Usuário">Usuário</option>
+                    </select>
+                </div>
+
+
+                <div class="  col-lg-10 mb-3   "><label for="endereco" class="form-label">Endereço</label>
+                    <textarea  class="form-control" id="endereco" rows="4"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class=" btn bg-primary">
+                        Entrar
+                    </button>
+
+
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </form>
 
     </div>
 </body>
